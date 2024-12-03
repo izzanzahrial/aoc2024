@@ -1,7 +1,6 @@
 package day2
 
 import (
-	"fmt"
 	"math"
 	"os"
 	"strconv"
@@ -26,7 +25,6 @@ func Part2() int {
 		for i := 0; i < len(curr); i++ {
 			dampened := append([]string(nil), curr[:i]...)
 			dampened = append(dampened, curr[i+1:]...)
-			fmt.Println("old nums ", curr, " new nums ", dampened)
 			if isSafe(dampened) {
 				result++
 				break
