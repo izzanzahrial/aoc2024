@@ -9,6 +9,7 @@ import (
 	"github.com/izzanzahrial/aoc2024/day4"
 	"github.com/izzanzahrial/aoc2024/day5"
 	"github.com/izzanzahrial/aoc2024/day7"
+	"github.com/izzanzahrial/aoc2024/day8"
 )
 
 func main() {
@@ -18,4 +19,5 @@ func main() {
 	fmt.Println("day4.Part1(): ", day4.Part1(), "day4.Part2():", day4.Part2())
 	fmt.Println("day5.Part1(): ", day5.Part1(), "day5.Part2():", day5.Part2())
 	fmt.Println("day7.Part1(): ", day7.Part1(), "day7.Part2():", day7.Part2())
+	fmt.Println("day8.Part1(): ", day8.Part1(), "day8.Part2():", day8.Part2())
 }
