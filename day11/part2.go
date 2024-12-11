@@ -39,6 +39,14 @@ func getResultBlinks(stone, blink int, cache map[int][]int) int {
 		return len(createNewStone(stone))
 	}
 
+	// recursively count the number of blinks by totaling the number of blinks
+	// for each previous blink
+	// blinks = 75 nums = [1, 2, 3, 4, 5, 6]
+	// blinks = 74 nums = [1] , [2], [3], [4], [5], [6]
+	// blinks = 73 the result from blinks = 74
+	// .....
+	// all the result will go up back again to the blinks = 75
+	// in short divide the work into smaller pieces
 	var result int
 	for _, stone := range createNewStone(stone) {
 		result += getResultBlinks(stone, blink-1, cache)
